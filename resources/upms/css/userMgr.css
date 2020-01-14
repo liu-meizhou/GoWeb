@@ -1,0 +1,73 @@
+a{
+    text-decoration: none;
+}
+
+#Chat{
+    height: 750px;
+    width:  1000px;
+    overflow: hidden;
+}
+#ChatMove{
+    position: relative;
+}
+
+#ChatMove>div{
+    height: 750px;
+    width:  1000px;
+}
+.ChatMessage{
+    height: 91%;
+    background-color: bisque;
+    overflow-y:scroll;
+}
+.ChatMessage .textRight{
+    text-align: right;
+}
+
+.ChatMessage li{
+    padding: 3px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.ChatMessage span{
+    position: relative;
+    border-radius: 7px;
+    background-color: #a6e860;
+    padding: 6px 10px 8px 10px;
+    z-index: 1;
+}
+
+
+.EditMessage{
+    height: 6%;
+}
+
+.ChatMessage .SendImage{
+    width: 120px;
+    height: 60px;
+}
+
+.NewMessage{
+    border-radius: 50%; 
+    height: 20px;
+    width: 20px; 
+    background: #f30303;
+    float: right;
+}
+
+.NewMessage .Count{
+    display: block;
+    color: #FFFFFF;
+    height: 20px;
+    line-height: 20px;
+    text-align: center
+}
+
+.Red{
+    color: red;
+}
+
+.hidden{
+    display: none;
+}

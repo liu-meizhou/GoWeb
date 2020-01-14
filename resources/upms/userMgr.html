@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>用户管理系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/userMgr.css">
+    <script src="/JS/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="/JS/jquery-ui.js" type="text/javascript"></script>
+    <script src="/JS/check.js" type="text/javascript"></script>
+    <script src="/JS/RegisterSubmit.js" type="text/javascript"></script>
+
+    <script src="js/userMgr.js" type="text/javascript"></script>
+    <script src="js/Chat.js" type="text/javascript"></script>
+    <script src="js/GetNoReadCount.js" type="text/javascript"></script>
+    <script src="js/WebSocket.js" type="text/javascript"></script>
+
+</head>
+
+<body style="height: 1500px;">
+    <span class="NewMessage">
+        <a href="#" class="Count" title="未读信息"> 12 </a>
+    </span>
+    <table class="layui-table">
+        <colgroup>
+            <col width="80" style="background-color: azure">
+            <col width="100" style="background-color: aliceblue">
+            <col width="160" style="background-color: azure">
+            <col width="140" style="background-color: aliceblue">
+            <col width="100" style="background-color: azure">
+            <col width="250" style="background-color: aliceblue">
+            <col width="250" style="background-color: azure">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>用户名</th>
+                <th>邮箱</th>
+                <th>电话</th>
+                <th>密码</th>
+                <th>操作</th>
+                <th><button onclick="Add()">添加新用户</button></th>
+            </tr>
+        </thead>
+        <tbody id="Users">
+        </tbody>
+    </table>
+
+    <div id="Chat" class="hidden">
+        <div id="ChatMove" style="top: 0px;">
+        </div>
+    </div>
+
+
+
+    <div class="hidden">
+        <div id="AddUser" title="添加新用户">
+            <div>
+                <div>username:</div><input type="text" id="name" />
+            </div>
+            <div>
+                <div>Email :</div><input type="text" id="email" />
+            </div>
+            <div>
+                <div>phone :</div><input type="text" id="phone" />
+            </div>
+            <div>
+                <div>password:</div><input type="text" id="password" />
+            </div>
+            <div id="message"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
