@@ -6,7 +6,7 @@ import (
 	"database/sql"
 
 	"pojo"
-	"database"
+	"DBconn"
 )
 
 //UserMapper 用户CRUD操作接口
